@@ -1,12 +1,14 @@
 
-$hostname = Read-Host "Hostname"
-
 $host.ui.RawUI.WindowTitle = "Connection Tester"
+
+Clear-Host
+Write-Host ''
+
+$hostname = Read-Host "Hostname"
 
 while ($true) {
 
     Clear-Host
-
     Write-Host ''
 
     Write-Host `
@@ -45,6 +47,6 @@ while ($true) {
 
     }
 
-    timeout.exe 5
+    timeout.exe 5 /NOBREAK
 
 }
