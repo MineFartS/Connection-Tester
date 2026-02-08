@@ -47,6 +47,6 @@ while ($true) {
 
     }
 
-    timeout.exe 5 /NOBREAK
+    timeout.exe 5
 
 }
